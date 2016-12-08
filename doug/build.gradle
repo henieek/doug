@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+dependencies {
+    compile 'com.google.dagger:dagger:2.8'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
