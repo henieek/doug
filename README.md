@@ -2,6 +2,11 @@
 Inject your dagger dependencies without modules.
 ![alt text](http://www.rantlifestyle.com/wp-content/uploads/2014/12/7-Doug-Stamper.jpg)
 
+Beware
+=======
+This stuff is in the PoC state.
+
+
 Motivation
 ======
 
