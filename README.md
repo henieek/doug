@@ -20,6 +20,17 @@ How to use it
 Simple as that.
 
 ```java
+public class Greeter {
+  @Inject
+  Greeter() { }
+  
+  String greet() {
+    return "prod";
+  }
+}
+```
+
+```java
 
 @Inject
 Greeter greeter;
