@@ -6,13 +6,13 @@ import java.util.Set;
 
 import javax.inject.Provider;
 
-final class Doug {
+public class Doug {
 
-    static void mock(Object component, Object mock) {
+    public static void mock(Object component, Object mock) {
         mock(component, mock, getMockClass(mock));
     }
 
-    static void mock(Object component, Object mock, Class<?> mappingClass) {
+    public static void mock(Object component, Object mock, Class<?> mappingClass) {
         try {
             mockInternal(new HashSet<Class<?>>(), component, mock, mappingClass);
         } catch (Exception e) {
