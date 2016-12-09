@@ -1,6 +1,6 @@
 # doug
 Inject your dagger dependencies without modules.
-[logo]: http://www.rantlifestyle.com/wp-content/uploads/2014/12/7-Doug-Stamper.jpg "Good guy Doug"
+![alt text](http://www.rantlifestyle.com/wp-content/uploads/2014/12/7-Doug-Stamper.jpg)
 
 Motivation
 ======
