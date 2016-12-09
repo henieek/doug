@@ -21,7 +21,7 @@ public class DougInstrumentationTest {
 
     private static final String TEST_GREET = "Test";
 
-    private final Greeter fakeGreeter = new Greeter() {
+    private final Greeter fakeGreeter = new Greeter(null) {
         @Override
         public String greet() {
             return TEST_GREET;
