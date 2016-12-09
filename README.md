@@ -23,10 +23,6 @@ Simple as that.
 public class Greeter {
   @Inject
   Greeter() { }
-  
-  String greet() {
-    return "prod";
-  }
 }
 ```
 
