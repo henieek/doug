@@ -8,15 +8,19 @@ import javax.inject.Provider;
 
 public class Doug {
 
+    private static final HashSet<Class<?>> ALREADY_MOCKED = new HashSet<>();
+
     public static void mock(Object component, Object mock) {
         mock(component, mock, getMockClass(mock));
     }
 
     public static void mock(Object component, Object mock, Class<?> mappingClass) {
         try {
-            mockInternal(new HashSet<Class<?>>(), component, mock, mappingClass);
+            mockInternal(ALREADY_MOCKED, component, mock, mappingClass);
         } catch (Exception e) {
             throw new RuntimeException(e);
+        } finally {
+            ALREADY_MOCKED.clear();
         }
     }
 
