@@ -5,6 +5,10 @@ Inject your dagger dependencies without modules.
 Beware
 =======
 This stuff is in the PoC state.
+Before you ever think about using it please check this page: https://google.github.io/dagger/testing.html
+
+1. Likely that you don't have to use Dagger in your unit tests at all.
+2. You shouldn't really mock stuff out in your instrumentation/end-to-end/functional/acceptance tests. Use fakes instead.
 
 
 Motivation
